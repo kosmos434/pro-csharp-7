@@ -11,7 +11,15 @@ namespace StaticDataAndMembers
         // instance level data
         public double currBalance;
         // STATIC data: shared among all objects of this class
-        public static double currInterestRate;
+        public static double currInterestRate = 0.04;
+
+
+        // STATIC property
+        public static double InterestRate
+        {
+            get => currInterestRate;
+            set => currInterestRate = value;
+        }
 
 
         // constructor

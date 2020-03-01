@@ -11,15 +11,13 @@ namespace IterationsAndDecisions
         static void Main(string[] args)
         {
             //ForLoopExample();
-            Console.WriteLine();
             //ForEachLoopExample();
-            Console.WriteLine();
             //LinqQueryOverInts();
-            Console.WriteLine();
             //WhileLoopExample();
             //DoWhileLoopExample();
             //ExecuteIfElseUsingConditionalOperator();
             //SwitchExample();
+            //SwitchOnStringExamples();
             //SwitchOnEnumExample();
             //SwitchWithGoto();
             //ExecutePatternMatchingSwitch();
@@ -34,7 +32,7 @@ namespace IterationsAndDecisions
             // note "i" is only visible within the scope of the for loop
             for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("NUmber is {0}", i);
+                Console.WriteLine("number is {0}", i);
             }
             // "i" is not visible here nyan
             {
@@ -42,7 +40,7 @@ namespace IterationsAndDecisions
             }
         }
 
-        // Iterate array items (n+1) with the power of foreach
+        // Iterate array items linearly (n+1) with the power of foreach
         static void ForEachLoopExample()
         {
             string[] carTypes = { "ford", "bmw", "audi", "tesla" };
@@ -96,10 +94,15 @@ namespace IterationsAndDecisions
             } while (userIsDone.ToLower() != "yes"); // <--semicolon
         }
 
+
+
+        // aka ternary operator
+        // condition ? if true : else
         private static void ExecuteIfElseUsingConditionalOperator()
         {
             //string stringData = "My texty data";
             string stringData = "text";
+            Console.WriteLine($"string is {stringData}");
             Console.WriteLine(stringData.Length > 6
                 ? "string is greater than 6 chars"
                 : "string is lesser than 6 char");
@@ -134,7 +137,7 @@ namespace IterationsAndDecisions
         static void SwitchOnStringExamples()
         {
             Console.WriteLine("c or vb");
-            Console.Write("please pick your language pref");
+            Console.Write("please pick your language pref ");
 
             string langChoice = Console.ReadLine();
             switch (langChoice)
@@ -155,7 +158,7 @@ namespace IterationsAndDecisions
 
         static void SwitchOnEnumExample()
         {
-            Console.Write("What is yur favorite day of the week");
+            Console.Write("What is your favorite day of the week ");
             DayOfWeek favDay;
 
             try
@@ -232,10 +235,10 @@ namespace IterationsAndDecisions
                     choice = "Hi";
                     break;
                 case "3":
-                    choice = 2.5;
+                    choice = 2.5m;
                     break;
                 default:
-                    choice = 5;
+                    choice = 9;
                     break;
             }
 

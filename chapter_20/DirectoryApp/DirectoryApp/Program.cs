@@ -17,7 +17,7 @@ namespace DirectoryApp
             //DisplayImageFiles();
             //ModifyappDirectory();
             //ModifyappDirectory2();
-            //FunWithDirectoryType();
+            FunWithDirectoryType();
             Console.ReadLine();
         }
 

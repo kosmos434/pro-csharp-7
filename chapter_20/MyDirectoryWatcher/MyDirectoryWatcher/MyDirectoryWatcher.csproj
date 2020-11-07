@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{51648B0C-2679-41E1-B484-3CFEF3645E23}</ProjectGuid>
+    <ProjectGuid>{0603D06E-A74A-4F58-9719-060D167DFE83}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SimpleFileIO</RootNamespace>
-    <AssemblyName>SimpleFileIO</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>MyDirectoryWatcher</RootNamespace>
+    <AssemblyName>MyDirectoryWatcher</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
